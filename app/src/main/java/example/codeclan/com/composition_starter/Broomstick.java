@@ -1,6 +1,8 @@
 package example.codeclan.com.composition_starter;
 
-public class Broomstick extends CleaningImplement {
+import behaviours.Flyable;
+
+public class Broomstick extends CleaningImplement implements Flyable {
 
   int speed;
 
@@ -16,4 +18,6 @@ public class Broomstick extends CleaningImplement {
   public String fly(){
     return "mounting broom, running, skipping, flying!";
   }
+
+
 }
